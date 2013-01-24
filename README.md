@@ -1,1 +1,3 @@
 CodeIgniter Extensions
+
+core, libraries, helpers ...
