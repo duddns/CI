@@ -4,12 +4,12 @@
  *
  * An open source application development framework for PHP 5.1.6 or newer
  *
- * @package		CodeIgniter
- * @author		ExpressionEngine Dev Team
- * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
- * @license		http://codeigniter.com/user_guide/license.html
- * @link		http://codeigniter.com
- * @since		Version 1.0
+ * @package        CodeIgniter
+ * @author        ExpressionEngine Dev Team
+ * @copyright    Copyright (c) 2008 - 2011, EllisLab, Inc.
+ * @license        http://codeigniter.com/user_guide/license.html
+ * @link        http://codeigniter.com
+ * @since        Version 1.0
  * @filesource
  */
 
@@ -20,24 +20,24 @@
  *
  * Parses URIs and determines routing
  *
- * @package		CodeIgniter
- * @subpackage	Libraries
- * @author		ExpressionEngine Dev Team
- * @category	Libraries
- * @link		http://codeigniter.com/user_guide/general/routing.html
+ * @package        CodeIgniter
+ * @subpackage    Libraries
+ * @author        ExpressionEngine Dev Team
+ * @category    Libraries
+ * @link        http://codeigniter.com/user_guide/general/routing.html
  */
 class MY_Router extends CI_Router {
     
     // --------------------------------------------------------------------
 
     /**
-	 * Validates the supplied segments.  Attempts to determine the path to
-	 * the controller.
-	 *
-	 * @access	private
-	 * @param	array
-	 * @return	array
-	 */  
+     * Validates the supplied segments.  Attempts to determine the path to
+     * the controller.
+     *
+     * @access    private
+     * @param    array
+     * @return    array
+     */  
     function _validate_request($segments)
     {
         if (count($segments) == 0)
@@ -70,18 +70,18 @@ class MY_Router extends CI_Router {
             else
             {
                 // Is the method being specified in the route?
-				if (strpos($this->default_controller, '/') !== FALSE)
-				{
-					$x = explode('/', $this->default_controller);
+                if (strpos($this->default_controller, '/') !== FALSE)
+                {
+                    $x = explode('/', $this->default_controller);
 
-					$this->set_class($x[0]);
-					$this->set_method($x[1]);
-				}
-				else
-				{
-					$this->set_class($this->default_controller);
-					$this->set_method('index');
-				}
+                    $this->set_class($x[0]);
+                    $this->set_method($x[1]);
+                }
+                else
+                {
+                    $this->set_class($this->default_controller);
+                    $this->set_method('index');
+                }
             
                 // Does the default controller exist in the sub-folder?
                 if ( ! file_exists(APPPATH.'controllers/'.$this->fetch_directory().$this->default_controller.'.php'))
@@ -97,17 +97,17 @@ class MY_Router extends CI_Router {
         
         
         // If we've gotten this far it means that the URI does not correlate to a valid
-		// controller class.  We will now see if there is an override
-		if ( ! empty($this->routes['404_override']))
-		{
-			$x = explode('/', $this->routes['404_override']);
+        // controller class.  We will now see if there is an override
+        if ( ! empty($this->routes['404_override']))
+        {
+            $x = explode('/', $this->routes['404_override']);
 
-			$this->set_class($x[0]);
-			$this->set_method(isset($x[1]) ? $x[1] : 'index');
+            $this->set_class($x[0]);
+            $this->set_method(isset($x[1]) ? $x[1] : 'index');
 
-			return $x;
-		}
-		
+            return $x;
+        }
+        
 
         // Nothing else to do at this point but show a 404
         show_404($segments[0]);
