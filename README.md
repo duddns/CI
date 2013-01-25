@@ -9,6 +9,8 @@ core, libraries, helpers ...
 
 
 ## Library
+### [Session](https://github.com/duddns/CI/blob/master/application/libraries/MY_Session.php)
+ * Don't create a sessions that if user agent are robot.
 
 
 ## Helper
