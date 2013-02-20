@@ -14,3 +14,7 @@ core, libraries, helpers ...
 
 
 ## Helper
+
+
+## Collaboration
+### [CodeIgniter + CKEditor + jQuery File Upload + Bootstrap](https://github.com/duddns/CI/wiki/CodeIgniter---CKEditor---jQuery-File-Upload---Bootstrap)
