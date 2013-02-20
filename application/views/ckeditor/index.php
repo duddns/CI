@@ -8,13 +8,13 @@
     <link href="css/jquery.fileupload-ui.css" rel="stylesheet" media="screen">
     <link href="css/editor.css" rel="stylesheet" media="screen">
 </head>
-	
+    
 <body>
 
 <div class="container">
-	<h2>ckeditor test</h2>
-	
-	<form class="form-horizontal" action="/ckeditor/save" method="post" enctype="multipart/form-data">
+    <h2>ckeditor test</h2>
+    
+    <form class="form-horizontal" action="/ckeditor/save" method="post" enctype="multipart/form-data">
         <fieldset>
             <div class="control-group">
                 <label class="control-label">제목</label>
@@ -62,7 +62,6 @@
 
 
 <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/ckeditor/ckeditor.js"></script>
 <script type="text/javascript" src="js/jquery.ui.widget.js"></script>
 <script type="text/javascript" src="js/jquery.fileupload.js"></script>
