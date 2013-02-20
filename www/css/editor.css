@@ -1,0 +1,32 @@
+#FILEUPLOAD .uploader {
+    margin: 5px 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#FILEUPLOAD .fileupload-progress {
+    overflow: hidden;
+}
+
+#FILEUPLOAD .progress {
+    margin: 5px 0;
+}
+
+#FILEUPLOAD .files {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid #dddddd;
+    border-radius: 4px 4px 4px 4px;
+}
+
+#FILEUPLOAD .files table td {
+    border: none;
+    line-height: 72px;
+}
+
+#FILEUPLOAD .files img {
+    width: 75px;
+    height: 75px;
+}

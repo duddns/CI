@@ -190,6 +190,11 @@ if (defined('ENVIRONMENT'))
 
 		define('APPPATH', BASEPATH.$application_folder.'/');
 	}
+	
+	/*
+     * HOMEPATH - The full server path to the home root path
+     */
+    define('HOMEPATH', pathinfo(__FILE__, PATHINFO_DIRNAME).'/');
 
 /*
  * --------------------------------------------------------------------
