@@ -15,10 +15,10 @@ core, libraries, helpers ...
 
 
 ## Library
-### [Profiler](https://github.com/duddns/CI/blob/master/application/libraries/MY_Profilet.php)
+### [Profiler](https://github.com/duddns/CI/blob/master/application/libraries/MY_Profiler.php)
  * Profiler Extension.
 
-### [Profiler_for_FirePHP](https://github.com/duddns/CI/blob/master/application/libraries/MY_Session.php)
+### [Profiler_for_FirePHP](https://github.com/duddns/CI/blob/master/application/libraries/Profiler_for_FirePHP.php)
  * Profiler Extension for FirePHP.
 
 ### [Session](https://github.com/duddns/CI/blob/master/application/libraries/MY_Session.php)
