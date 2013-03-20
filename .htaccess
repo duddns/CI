@@ -3,19 +3,14 @@ RewriteBase /
 
 # images, css, js
 RewriteRule ^(images|css|js)/.*$ www/$0
-
 # favicon
 RewriteRule ^(favicon\.ico) www/$0
-
 # profiler
 RewriteRule ^(profiler)/.*$ www/$0
-
 RewriteRule ^www/.*$ - [L]
-
 
 # upload files
 RewriteRule ^files/.*$ - [L]
-
 
 # default
 RewriteCond $1 !^(index\.php|robots\.txt|favicon\.ico|notice\.html)

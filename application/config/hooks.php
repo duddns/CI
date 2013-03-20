@@ -11,6 +11,15 @@
 */
 
 
+// for debug
+$hook['post_controller_constructor'][] = array(
+    'class' => 'Profiler_hook',
+    'function' => 'enable',
+    'filename' => 'profiler_hook.php',
+    'filepath' => 'hooks',
+    'params' => array()
+);
+
 
 /* End of file hooks.php */
 /* Location: ./application/config/hooks.php */
